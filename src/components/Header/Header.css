@@ -1,0 +1,63 @@
+header{
+    width: 1240px;
+    height: 68px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 100px 63px 100px;
+}
+
+@media screen and (max-width: 1300px){
+    header{
+       width: 90%;
+       height: 75px;
+    }
+}
+
+@media screen and (max-width: 822px){
+    header{
+        margin: 25px 100px 25px 100px;
+    }
+}
+
+@media screen and (max-width: 558px){
+    header{
+        height: 50px;
+        margin: 25px auto;
+    }
+}
+
+nav {
+    margin-top: 20px;
+  }
+  
+  nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #ff6060;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+    .activeLink {
+    text-decoration: underline;
+  }
+
+@media only screen and (max-width: 425px) {
+    nav a {
+      font-size: 12px;
+    }
+  }
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    nav a {
+      font-size: 16px;
+    }
+  }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    nav a {
+      font-size: 20px;
+    }
+  }

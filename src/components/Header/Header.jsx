@@ -1,17 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import About from "../About/About";
-import logo from '../../assets/logo.png';
+import logoHeader from '../../assets/logo.png';
+import { NavLink } from 'react-router-dom';
+import "./Header.css"
 
-export default function Navbar() {
+export default function Header() {
   return (
     <header>
-      <img src={logo} alt='Logo kaza'/>
+      <img src={logoHeader} alt='Logo kaza'/>
       <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/about" element={<About />}>
-          A Propos
-        </Link>
+      <NavLink
+            to="/"
+            className={({ isactive }) => {
+                return isactive ? "activeLink" : "";
+            }}
+        >
+            Accueil
+        </NavLink>
+
+        <NavLink
+            to="/About"
+            className={({ isactive }) => {
+                return isactive ? "activeLink" : "";
+            }}
+        >
+            A propos
+        </NavLink>
       </nav>
     </header>
   );

@@ -1,14 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import logo from '../../assets/logoFooter.png';
+import "./Footer.css"
 
-export default function Footer() {
+
+export default function Footer(logoFooter) {
   return (
-    <Footer>
-      <Link className="lien-footer">
-        <h1>Page footer</h1>
-        <img src={logo} alt='Logo kaza'/>
-      </Link>
-    </Footer>
+    <div className="ContainerFooter">
+      <img className="Logo-Footer" src={logoFooter.img} alt="Logo Footer" />
+      <p className="Copyright">© 2020 Kasa. All rights reserved</p>
+    </div>
   );
 }

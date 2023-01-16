@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+.containerHome{
+    display: flex;
+    justify-content: center;
+}
+
+  @media only screen and (max-width: 450px) {
+    .containerHome img {
+      height: 111px;
+    }
+  }
