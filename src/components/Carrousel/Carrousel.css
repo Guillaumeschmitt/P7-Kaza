@@ -1,6 +1,9 @@
 .containerCarrousel{
-    margin: ;
-}
+    max-width: 85%;
+    height: 415px;
+    margin: auto;
+  }
+
 .containerArrow {
     display: flex;
     justify-content: space-between;
