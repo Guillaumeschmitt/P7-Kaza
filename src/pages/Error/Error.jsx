@@ -10,7 +10,7 @@ export default function Error() {
     <div>
       <Header />
       <div className="containerError">
-        <h1 className="404">404</h1>
+        <h1 className="erreur404">404</h1>
         <h2 className="oups">Oups! La page que vous demandez n'existe pas.</h2>
         <NavLink to="/" className="retour">
             Retourner sur la page d’accueil

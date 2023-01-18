@@ -4,23 +4,30 @@ import CarrouselGauche from "../../assets/carrouselGauche.svg";
 import CarrouselDroite from "../../assets/carrouselDroite.svg";
 
 export default function Carrousel({ slides }) {
-  const [currentImage, setCurrentImage] = useState(0);
-  const imageTotal = slides.lenght;
-  const ImagePrevious = <img src={CarrouselGauche} alt="Image précédente" />;
-  const ImageNext = <img src={CarrouselDroite} alt="Image Suivante" />;
+  
+const [currentImage, setCurrentImage] = useState(0);
+
+  const imageTotal = slides.length;
+
+  const previousImage = () => {
+    setCurrentImage(currentImage === 0 ? imageTotal - 1 : currentImage - 1);
+  };
 
   const nextImage = () => {
     setCurrentImage(currentImage === imageTotal - 1 ? 0 : currentImage + 1);
   };
 
-  const previousImage = () => {
-    setCurrentImage(currentImage === 0 ? imageTotal -1 : currentImage -1);
-  }
+  const ImagePrevious = <img src={CarrouselGauche} alt="Image precedente" />;
+
+  
+
+  const ImageNext = <img src={CarrouselDroite} alt="Image suivante" />;
 
 
   return (
     <div className='containerCarrousel'>
-     <div className="containerArrow">
+
+      <div className="containerArrow">
         {imageTotal > 1 && (
           <button onClick={previousImage} className="previousButton">
             {ImagePrevious}
@@ -33,6 +40,7 @@ export default function Carrousel({ slides }) {
           </button>
         )}
       </div>
+
 
       {slides.map((slide, index) => {
         return (
@@ -52,7 +60,8 @@ export default function Carrousel({ slides }) {
           </p>
         </div>
       )}
-      <p>{ImageNext}</p>
     </div>
   )
 }
+
+

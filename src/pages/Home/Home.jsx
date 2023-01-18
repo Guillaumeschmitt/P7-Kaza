@@ -7,7 +7,7 @@ import './Home.css';
 import logoHeader from '../../assets/logo.png';
 import logoFooter from '../../assets/logoFooter.png';
 
-export default function Home() {
+export default function Home() { 
   return (
     <div>
       <Header img={logoHeader} />
