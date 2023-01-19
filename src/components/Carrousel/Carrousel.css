@@ -1,7 +1,8 @@
 .containerCarrousel{
-    max-width: 85%;
-    height: 415px;
+    max-width: 100%;
+    /* height: 415px; */
     margin: auto;
+    position: relative;
   }
 
 .containerArrow {
@@ -9,7 +10,7 @@
     justify-content: space-between;
     position: absolute;
     z-index: 5;
-    width: 85%;
+    width: 73%;
     align-items: center;
     align-content: center;
   
@@ -28,90 +29,46 @@
     object-fit: cover;
     border-radius: 10px;
   }
-  
-  .previousButton,
-  .nextButton {
+
+  .previousButton{
     background: none;
     border: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: 40%;
   }
   
+  .nextButton{
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    top: 40%;
+  }
+
   .counterContainer {
     margin-top: -40px;
     font-family: Montserrat, sans-serif;
+    font-weight: 900;
     color: white;
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
     margin-left: 14px;
-  }
-  
-  @media only screen and (max-width: 450px) {
-    .Carrousel,
-    .imageSlide {
-      height: 255px;
-    }
-  
-    .containerArrow {
-      margin-top: 0;
-      margin-top: 120px;
-      width: 85%;
-    }
-  
-    .containerArrow button {
-      width: 11px;
-      height: 18px;
-    }
+    text-align: center;
   }
 
-  /* .containerArrow {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    z-index: 5;
-    width: 85%;
-    align-items: center;
-    align-content: center;
-  
-    margin-top: 170px;
-  }
-  
-  .containerArrow button {
-    width: 46px;
-    height: 79px;
-  }
-  
-  .Carrousel {
-    max-width: 85%;
-    height: 415px;
-    margin: auto;
-  }
-  
-  .imageSlide {
-    width: 100%;
-    height: 415px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  .previousButton,
-  .nextButton {
-    background: none;
-    border: none;
-  }
-  
-  .counterContainer {
-    margin-top: -40px;
-    font-family: Montserrat, sans-serif;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-  }
   
   @media only screen and (max-width: 450px) {
     .Carrousel,
     .imageSlide {
       height: 255px;
+      width: 100%;
+      margin: auto;
     }
   
     .containerArrow {
@@ -124,4 +81,9 @@
       width: 11px;
       height: 18px;
     }
-  } */
+
+
+
+  }
+
+  

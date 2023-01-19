@@ -1,22 +1,24 @@
-header{
-    width: 1539px;
-    height: 68px;
+/*  header{
     text-align: center;
     display: flex;
     justify-content: space-between;
-    margin: 40px 100px 63px 100px;
+    margin: 40px 0px;
+    
+}
+.activeLink {
+  text-decoration: underline;
 }
 
 header img{
-  margin-left: 32px;
+  
 }
 
 @media screen and (max-width: 1300px){
     header{
        width: 90%;
        height: 75px;
-    }
-}
+    
+} 
 
 @media screen and (max-width: 822px){
     header{
@@ -27,6 +29,7 @@ header img{
 @media screen and (max-width: 558px){
     header{
         height: 50px;
+        width: 90%;
         margin: 25px auto;
     }
 }
@@ -64,4 +67,36 @@ nav {
     nav a {
       font-size: 20px;
     }
+  }  */
+
+  .containerHeader {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
+  .Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 85%;
+    height: 68px;
+  }
+  
+  .Logo {
+    color: #ff6060;
+    margin-top: 20px;
+  
+    height: 68px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .Logo {
+      margin-top: 20px;
+  
+      width: 145px;
+      height: 47px;
+    }
+  }
+  

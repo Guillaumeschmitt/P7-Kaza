@@ -27,19 +27,20 @@ const [currentImage, setCurrentImage] = useState(0);
   return (
     <div className='containerCarrousel'>
 
-      <div className="containerArrow">
-        {imageTotal > 1 && (
-          <button onClick={previousImage} className="previousButton">
-            {ImagePrevious}
-          </button>
-        )}
-
+    
+        
         {imageTotal > 1 && (
           <button onClick={nextImage} className="nextButton">
             {ImageNext}
           </button>
         )}
-      </div>
+        
+      {imageTotal > 1 && (
+          <button onClick={previousImage} className="previousButton">
+            {ImagePrevious}
+          </button>
+        )}
+
 
 
       {slides.map((slide, index) => {

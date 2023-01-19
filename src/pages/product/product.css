@@ -1,4 +1,8 @@
-  .contenuContainer {
+.ContainerProduct{
+  margin: auto;
+  max-width: 1240px;
+}
+.contenuContainer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
@@ -8,9 +12,7 @@
     max-width: 87%;
   }
 
-  .containerTitreLocationTags{
-    max-width: 87%;
-  }
+
   
   .TitreLogement {
     font-family: montserrat, sans-serif;

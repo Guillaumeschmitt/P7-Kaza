@@ -63,6 +63,7 @@ export default function Product() {
 
   return (
     <div>
+    <div className='ContainerProduct'>
       <Header />
       <div className="ContainerContent">
         <Carrousel slides={logementId.pictures} />
@@ -117,6 +118,7 @@ export default function Product() {
           </div>
         </div>
       </div>
+    </div>
       <Footer img={logoFooter} />
     </div>
   )
