@@ -9,7 +9,7 @@
     .ContainerBanner{
         height: 160px;
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
 }
 
@@ -44,7 +44,7 @@
 
 @media screen and (max-width: 455px){
     .bannerImg{
-        height: 135px;
+        height: 223px;
     }
 }
 
@@ -85,8 +85,11 @@
 
 @media screen and (max-width: 455px){
     .bannerTitle{
-        bottom: 82%;
-        font-size: 30px;
+        bottom: 66%;
+        font-size: 24px;
+        width: 217px;
+        height: 48px;
+        left: 2px;
     }
 }
 

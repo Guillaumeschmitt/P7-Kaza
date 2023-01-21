@@ -86,4 +86,10 @@
 
   }
 
+  @media only screen and (max-width: 1250px) {
+    .containerCarrousel{
+      margin: 20px;
+    }
+  }
+
   

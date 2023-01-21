@@ -5,6 +5,14 @@
 
   
 .ContainerBannerAbout{
-    max-width: 1240px;
+    max-width: 85%;
     margin:auto;
+}
+
+.HeaderAbout{
+  width: 1240px;
+}
+
+.SlideAbout{
+  margin-bottom: 200px;
 }
