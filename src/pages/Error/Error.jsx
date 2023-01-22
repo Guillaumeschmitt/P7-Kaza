@@ -8,8 +8,9 @@ import './Error.css'
 export default function Error() {
   return (
     <div>
-      <Header />
       <div className="containerError">
+      <Header />
+      
         <h1 className="erreur404">404</h1>
         <h2 className="oups">Oups! La page que vous demandez n'existe pas.</h2>
         <NavLink to="/" className="retour">
