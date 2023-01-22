@@ -18,8 +18,8 @@ export default function About() {
 `;
   return (
     <div>
+       <div className="ContainerBannerAbout">
       <Header className="HeaderAbout"/>
-      <div className="ContainerBannerAbout">
         <img className='bannerImg' src={background} alt="image" />
         <div className="SlideAbout">
       <CollapseStyleLocation>

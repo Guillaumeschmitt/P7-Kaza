@@ -10,11 +10,13 @@ import logoFooter from '../../assets/logoFooter.png';
 export default function Home() { 
   return (
     <div>
+      <div className="containerAccueil">
       <Header img={logoHeader} />
       <div className="containerHome">
       <Banner title="Chez vous, partout et ailleurs"/>
       </div>
       <Cards />
+      </div>
       <Footer img={logoFooter} />
     </div>
   );

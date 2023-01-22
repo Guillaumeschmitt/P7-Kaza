@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    width: 85%;
+    width: 100%;
     height: 68px;
   }
   
@@ -26,6 +26,22 @@
   
       width: 145px;
       height: 47px;
+    }
+    .Header{
+      margin: 0px 20px;
+    }
+
+  }
+
+  @media only screen and (max-width: 450px) {
+    .Header{
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 1250px) {
+    .Header{
+      margin: 0px 20px;
     }
   }
   

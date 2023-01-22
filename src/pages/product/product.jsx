@@ -54,7 +54,7 @@ export default function Product() {
     arrayRating.push(
       <img
         key={"greyStar" + a}
-        className="stars"
+        className="etoilePleine"
         src={etoileVide}
         alt="Grey Stars"
       />

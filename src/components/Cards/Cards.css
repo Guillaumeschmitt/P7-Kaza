@@ -7,7 +7,7 @@
   .Background {
     border-radius: 25px;
     background-color: #e3e3e3;
-    width: 80%;
+    width: 100%;
     gap: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -81,4 +81,11 @@
       width: 400px;
       height: 400px;
     }
+  }
+
+  @media only screen and (max-width: 1250px) {
+      .ContainerCard {
+        margin: 43px 20px 0px;
+      }
+    
   }

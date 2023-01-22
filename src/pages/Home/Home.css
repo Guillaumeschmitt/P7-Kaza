@@ -6,10 +6,20 @@
 .containerHome{
     display: flex;
     justify-content: center;
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
+    margin-top: 69px;
+}
+
+.containerAccueil{
+  margin: auto;
+  max-width: 1240px;
 }
 
   @media only screen and (max-width: 450px) {
+    .containerHome{
+      margin-top: 16px;
+      margin-bottom: 22px;
+    }
     .containerHome img {
       height: 111px;
     }
