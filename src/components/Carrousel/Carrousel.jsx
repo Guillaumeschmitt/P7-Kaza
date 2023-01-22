@@ -2,6 +2,9 @@ import React, {useState} from 'react';
 import "./Carrousel.css";
 import CarrouselGauche from "../../assets/carrouselGauche.svg";
 import CarrouselDroite from "../../assets/carrouselDroite.svg";
+import CarrouselGaucheMobile from "../../assets/carrouselGaucheMobile.svg";
+import CarrouselDroiteMobile from "../../assets/carrouselDroiteMobile.svg";
+
 
 export default function Carrousel({ slides }) {
   
@@ -19,10 +22,11 @@ const [currentImage, setCurrentImage] = useState(0);
 
   const ImagePrevious = <img src={CarrouselGauche} alt="Image precedente" />;
 
-  
-
   const ImageNext = <img src={CarrouselDroite} alt="Image suivante" />;
 
+  const ImagePreviousMobile = <img src={CarrouselGaucheMobile} alt="Image precedente" />;
+
+  const ImageNextMobile = <img src={CarrouselDroiteMobile} alt="Image suivante" />;
 
   return (
     <div className='containerCarrousel'>
@@ -35,12 +39,23 @@ const [currentImage, setCurrentImage] = useState(0);
           </button>
         )}
         
-      {imageTotal > 1 && (
+        {imageTotal > 1 && (
+          <button onClick={nextImage} className="nextButtonMobile">
+            {ImageNextMobile}
+          </button>
+        )}
+
+        {imageTotal > 1 && (
           <button onClick={previousImage} className="previousButton">
             {ImagePrevious}
           </button>
         )}
 
+        {imageTotal > 1 && (
+          <button onClick={previousImage} className="previousButtonMobile">
+            {ImagePreviousMobile}
+          </button>
+        )}
 
 
       {slides.map((slide, index) => {

@@ -29,6 +29,11 @@
     object-fit: cover;
     border-radius: 10px;
   }
+  .previousButtonMobile,
+  .nextButtonMobile
+  {
+    display: none;
+  }
 
   .previousButton{
     background: none;
@@ -62,6 +67,8 @@
     text-align: center;
   }
 
+
+
   
   @media only screen and (max-width: 450px) {
     .Carrousel,
@@ -80,9 +87,34 @@
     .containerArrow button {
       width: 11px;
       height: 18px;
+    } 
+
+    .previousButton,
+    .nextButton{
+      display: none;
     }
 
+    .previousButtonMobile{
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    left: 6px;
+    top: 48%;
+    }
 
+    .nextButtonMobile{
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      z-index: 1;
+      right: 6px;
+      top: 48%;
+    }
 
   }
 
