@@ -89,3 +89,9 @@
       }
     
   }
+
+  @media only screen and (max-width: 450px) {
+    .ContainerCard {
+      margin-top: 0px;
+    }
+  }
