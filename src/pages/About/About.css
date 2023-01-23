@@ -16,3 +16,9 @@
 .SlideAbout{
   margin-bottom: 200px;
 }
+
+@media only screen and (max-width: 1250px) {
+  .ContainerAbout{
+    margin: 0px 20px;
+  }
+}
