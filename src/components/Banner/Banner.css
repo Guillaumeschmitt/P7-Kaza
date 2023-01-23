@@ -95,10 +95,3 @@
         left: 2px;
     }
 }
-
-@media screen and (max-width: 370px){
-    .bannerTitle{
-        bottom: 80%;
-        font-size: 28px;
-    }
-}
