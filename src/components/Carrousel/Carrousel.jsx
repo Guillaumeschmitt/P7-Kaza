@@ -20,13 +20,13 @@ const [currentImage, setCurrentImage] = useState(0);
     setCurrentImage(currentImage === imageTotal - 1 ? 0 : currentImage + 1);
   };
 
-  const ImagePrevious = <img src={CarrouselGauche} alt="Image precedente" />;
+  const Previous = <img src={CarrouselGauche} alt="precedente" />;
 
-  const ImageNext = <img src={CarrouselDroite} alt="Image suivante" />;
+  const Next = <img src={CarrouselDroite} alt="suivante" />;
 
-  const ImagePreviousMobile = <img src={CarrouselGaucheMobile} alt="Image precedente" />;
+  const PreviousMobile = <img src={CarrouselGaucheMobile} alt="precedente" />;
 
-  const ImageNextMobile = <img src={CarrouselDroiteMobile} alt="Image suivante" />;
+  const NextMobile = <img src={CarrouselDroiteMobile} alt="suivante" />;
 
   return (
     <div className='containerCarrousel'>
@@ -35,25 +35,25 @@ const [currentImage, setCurrentImage] = useState(0);
         
         {imageTotal > 1 && (
           <button onClick={nextImage} className="nextButton">
-            {ImageNext}
+            {Next}
           </button>
         )}
         
         {imageTotal > 1 && (
           <button onClick={nextImage} className="nextButtonMobile">
-            {ImageNextMobile}
+            {NextMobile}
           </button>
         )}
 
         {imageTotal > 1 && (
           <button onClick={previousImage} className="previousButton">
-            {ImagePrevious}
+            {Previous}
           </button>
         )}
 
         {imageTotal > 1 && (
           <button onClick={previousImage} className="previousButtonMobile">
-            {ImagePreviousMobile}
+            {PreviousMobile}
           </button>
         )}
 

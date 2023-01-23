@@ -5,7 +5,7 @@ import BannerImage from '../../assets/backgroundBanner.png';
 export default function Banner({title}) {
   return (
     <div className='ContainerBanner'>
-        <img className='bannerImg' src={BannerImage} alt="image" />
+        <img className='bannerImg' src={BannerImage} alt="Banniere" />
         {title && (
             <h1 className='bannerTitle'>{title}</h1>
         )}

@@ -17,6 +17,18 @@
   margin-bottom: 200px;
 }
 
+.CollapseStyleLocation{
+  width: 70%;
+  height: auto;
+  margin: 30px auto 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .CollapseStyleLocation{
+   width: 85%;
+  }
+}
+
 @media only screen and (max-width: 1250px) {
   .ContainerAbout{
     margin: 0px 20px;
